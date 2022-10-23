@@ -1,25 +1,7 @@
 import * as React from "react"
+import Layout from '../components/layout'
 import { graphql } from 'gatsby'
-
-const pageStyles = {
-  color: "#232129",
-  padding: 96,
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-  textAlign: "center"
-}
-
-const descriptionStyle = {
-  color: "#232129",
-  fontSize: 14,
-  marginTop: 10,
-  marginBottom: 0,
-  lineHeight: 1.25,
-}
+import Seo from '../components/seo'
 
 const imageStyle = {
   textAlign: "center"
@@ -27,10 +9,7 @@ const imageStyle = {
 
 const RecipePage = ({data}) => {
   return (
-    <main style={pageStyles}>
-      <h1 stype={headingStyles}>
-        {data.Drupal.nodeRecipe.title}
-      </h1>
+    <Layout pageTitle={data.Drupal.nodeRecipe.title}>
       <div style={imageStyle}>
         <img
           src={data.Drupal.nodeRecipe.mediaImage.mediaImage.url}
@@ -47,11 +26,17 @@ const RecipePage = ({data}) => {
       <b>Cooking time:</b> {data.Drupal.nodeRecipe.cookingTime}
      
       <div dangerouslySetInnerHTML={{ __html: data.Drupal.nodeRecipe.recipeInstruction.processed }} />
-    </main>
+    </Layout>
   )
 }
 
 //export const Head = ({data}) => <title>Home Page</title>
+
+
+
+
+
+export const Head = () => <Seo title="Recipe"/>
 
 export const query = graphql`
 query MyQuery {
@@ -74,6 +59,5 @@ query MyQuery {
             }
 }
 `
-
 
 export default RecipePage
