@@ -4,22 +4,23 @@
   </a>
 </p>
 <h1 align="center">
-  Gatsby minimal starter
+  my-first-gatsby-site
 </h1>
+<h3 align="center">
+we all have to start somewhere
+</h3>
 
-## 🚀 Quick start
+## 😖 What?
 
-1.  **Create a Gatsby site.**
+This is a simple project using the [Gatsby](gatsbyjs.com) framework.
+Created in the Fall of 2022 for a Senior course that dabbled in web frameworks, it extends the Gatsby tutorial and to include pages generated from the [Drupal](drupal.org) CMS.
+There is also a sprinkling of [framer-motion](framer.com) in there to animate images.
+This site is automatically built and deployed to [Gatsby Cloud](https://www.gatsbyjs.com/cloud/) at [this link](https://myfirstgatsbysitemain33256.gatsbyjs.io/).
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+## 🏃Running locally
 
-2.  **Start developing.**
-
+1.  **Start the development server**
     Navigate into your new site’s directory and start it up.
 
     ```shell
@@ -27,13 +28,12 @@
     npm run develop
     ```
 
-3.  **Open the code and start customizing!**
+2.  **View the site**
 
-    Your site is now running at http://localhost:8000!
+    The site is now running at http://localhost:8000
 
-    Edit `src/pages/index.js` to see your site update in real-time!
 
-4.  **Learn more**
+## 📚Further reading
 
     - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
 
@@ -47,8 +47,3 @@
 
     - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
 
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
